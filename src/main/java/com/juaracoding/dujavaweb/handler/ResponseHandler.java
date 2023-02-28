@@ -36,5 +36,19 @@ public class ResponseHandler {
         }
         return new ResponseEntity<Object>(map,status);
     }
-}
 
+    public Map<String,Object> generateModelAttribut(String message, HttpStatus status, Object responseObj, Object errorCode, WebRequest request) {
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("message", message);
+        map.put("status", status.value());
+        map.put("data", responseObj==null?"":responseObj);
+        map.put("timestamp", new Date());
+        map.put("success",!status.isError());
+        if(errorCode != null)
+        {
+            map.put("errorCode",errorCode);
+            map.put("path",request.getDescription(false));
+        }
+        return map;
+    }
+}

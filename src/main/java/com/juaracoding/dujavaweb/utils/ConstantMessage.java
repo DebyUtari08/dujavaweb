@@ -123,8 +123,19 @@ public class ConstantMessage {
     public final static String WARNING_NAMA_DEPAN_MANDATORY_BLANK  = "NAMA LENGKAP BLANK WAJIB DIISI";
     public final static String WARNING_NAMA_DEPAN_MAXLENGTH = "NAMA DEPAN MAKSIMAL 25";
 
+    /*
+        AUTH
+     */
+
+    public final static String ERROR_REGIS_FAILED = "REGISTRASI GAGAL";
+    public final static String ERROR_TOKEN_NOT_VALID = "TOKEN TIDAK SESUAI";
+    public final static String SUCCESS_CHECK_REGIS = "PROSES REGISTRASI AMAN";
+    public final static String SUCCESS_LOGIN = "LOGIN BERHASIL";
+    public final static String ERROR_EMAIL_ISEXIST = "REGISTRASI GAGAL! EMAIL SUDAH TERDAFTAR";
+    public final static String ERROR_LOGIN_FAILED = "USERNAME DAN PASSWORD SALAH !!";
+    public final static String ERROR_USER_NOT_EXISTS = "USER TIDAK TERDAFTAR / USERNAME DAN PASSWORD SALAH !!";
+
 
 
 
 }
-

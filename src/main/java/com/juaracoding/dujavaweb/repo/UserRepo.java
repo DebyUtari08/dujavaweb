@@ -13,11 +13,11 @@ import com.juaracoding.dujavaweb.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
-import java.util.Optional;
 
 
 public interface UserRepo extends JpaRepository<User,Long> {
 
     public List<User> findByEmail(String value);
+    public List<User> findByEmailOrUsername(String emails, String username);
 }
 
